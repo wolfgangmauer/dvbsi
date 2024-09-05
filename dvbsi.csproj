@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A067D016-9EB7-4847-AEAD-AACDF273E34D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>dvbsi</RootNamespace>
+    <AssemblyName>dvbsi</AssemblyName>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\media\hd51\ffNeutrinoHD</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\media\hd51\ffNeutrinoHD</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'VUPLUS|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\media\hd51\ffNeutrinoHD</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApplicationIdentifier.cs" />
+    <None Include="ApplicationInformation.cs" />
+    <None Include="ApplicationInformationSection.cs" />
+    <None Include="ApplicationProfile.cs" />
+    <None Include="BouquetAssociationSection.cs" />
+    <None Include="ConditionalAccessMessageSection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Descriptor.cs" />
+    <Compile Include="ServiceDescriptor.cs" />
+    <Compile Include="DescriptorContainer.cs" />
+    <Compile Include="VideoStreamDescriptor.cs" />
+    <Compile Include="AudioStreamDescriptor.cs" />
+    <Compile Include="CaDescriptor.cs" />
+    <None Include="packages.config" />
+    <None Include="RegistrationDescriptor.cs" />
+    <None Include="TargetBackgroundGridDescriptor.cs" />
+    <None Include="VideoWindowDescriptor.cs" />
+    <Compile Include="Iso639LanguageDescriptor.cs" />
+    <None Include="NetworkNameDescriptor.cs" />
+    <None Include="ServiceListDescriptor.cs" />
+    <None Include="StuffingDescriptor.cs" />
+    <None Include="SatelliteDeliverySystemDescriptor.cs" />
+    <None Include="VbiDataDescriptor.cs" />
+    <None Include="VbiTeletextDescriptor.cs" />
+    <None Include="CountryAvailabilityDescriptor.cs" />
+    <None Include="NvodReferenceDescriptor.cs" />
+    <Compile Include="ShortEventDescriptor.cs" />
+    <Compile Include="ExtendedEventDescriptor.cs" />
+    <None Include="MosaicDescriptor.cs" />
+    <None Include="StreamIdentifierDescriptor.cs" />
+    <None Include="TeletextDescriptor.cs" />
+    <None Include="TelephoneDescriptor.cs" />
+    <None Include="LocalTimeOffsetDescriptor.cs" />
+    <None Include="SubtitlingDescriptor.cs" />
+    <None Include="TerrestrialDeliverySystemDescriptor.cs" />
+    <None Include="MultilingualNetworkNameDescriptor.cs" />
+    <None Include="MultilingualBouquetNameDescriptor.cs" />
+    <None Include="MultilingualServiceNameDescriptor.cs" />
+    <None Include="MultilingualComponentDescriptor.cs" />
+    <None Include="ServiceMoveDescriptor.cs" />
+    <None Include="ShortSmoothingBufferDescriptor.cs" />
+    <None Include="FrequencyListDescriptor.cs" />
+    <None Include="ScramblingDescriptor.cs" />
+    <None Include="TransportStreamDescriptor.cs" />
+    <None Include="DSNGDescriptor.cs" />
+    <None Include="Ac3Descriptor.cs" />
+    <None Include="CellListDescriptor.cs" />
+    <None Include="CellFrequencyLinkDescriptor.cs" />
+    <None Include="LogicalChannelDescriptor.cs" />
+    <None Include="FtaContentManagementDescriptor.cs" />
+    <None Include="XaitLocationDescriptor.cs" />
+    <Compile Include="AACDescriptor.cs" />
+    <None Include="DTSDescriptor.cs" />
+    <None Include="EnhancedAC3Descriptor.cs" />
+    <None Include="S2SatelliteDeliverySystemDescriptor.cs" />
+    <None Include="ECMRepetitionRateDescriptor.cs" />
+    <None Include="TimeSliceFecIdentifierDescriptor.cs" />
+    <None Include="ContentIdentifierDescriptor.cs" />
+    <None Include="TVAIdDescriptor.cs" />
+    <None Include="RelatedContentDescriptor.cs" />
+    <None Include="DefaultAuthorityDescriptor.cs" />
+    <None Include="ServiceAvailabilityDescriptor.cs" />
+    <None Include="ServiceIdentifierDescriptor.cs" />
+    <None Include="AdaptationFieldDataDescriptor.cs" />
+    <None Include="ImageIconDescriptor.cs" />
+    <None Include="CpcmDeliverySignallingDescriptor.cs" />
+    <None Include="CpDescriptor.cs" />
+    <None Include="CpIdentifierDescriptor.cs" />
+    <Compile Include="ExtensionDescriptor.cs" />
+    <None Include="NameDescriptor.cs" />
+    <None Include="TypeDescriptor.cs" />
+    <None Include="InfoDescriptor.cs" />
+    <None Include="ModuleLinkDescriptor.cs" />
+    <None Include="Crc32Descriptor.cs" />
+    <None Include="LocationDescriptor.cs" />
+    <None Include="EstDownloadTimeDescriptor.cs" />
+    <None Include="GroupLinkDescriptor.cs" />
+    <None Include="CompressedModuleDescriptor.cs" />
+    <None Include="LabelDescriptor.cs" />
+    <None Include="CachingPriorityDescriptor.cs" />
+    <None Include="ContentTypeDescriptor.cs" />
+    <None Include="ApplicationDescriptor.cs" />
+    <None Include="ApplicationNameDescriptor.cs" />
+    <None Include="TransportProtocolDescriptor.cs" />
+    <None Include="DvbJApplicationDescriptor.cs" />
+    <None Include="DvbJApplicationLocationDescriptor.cs" />
+    <None Include="ExternalApplicationAuthorisationDescriptor.cs" />
+    <None Include="DvbHtmlApplicationDescriptor.cs" />
+    <None Include="DvbHtmlApplicationLocationDescriptor.cs" />
+    <None Include="DvbHtmlApplicationBoundaryDescriptor.cs" />
+    <None Include="ApplicationIconsDescriptor.cs" />
+    <None Include="PrefetchDescriptor.cs" />
+    <None Include="SimpleApplicationBoundaryDescriptor.cs" />
+    <None Include="ApplicationUsageDescriptor.cs" />
+    <None Include="DiiLocationDescriptor.cs" />
+    <None Include="DelegatedApplicationDescriptor.cs" />
+    <None Include="PluginDescriptor.cs" />
+    <None Include="ApplicationStorageDescriptor.cs" />
+    <None Include="IpSignalingDescriptor.cs" />
+    <None Include="GraphicsConstraintsDescriptor.cs" />
+    <None Include="SimpleApplicationLocationDescriptor.cs" />
+    <Compile Include="LongCrcSection.cs" />
+    <Compile Include="LongSection.cs" />
+    <Compile Include="ShortSection.cs" />
+    <Compile Include="PacketId.cs" />
+    <Compile Include="TableId.cs" />
+    <Compile Include="EventInformationSection.cs" />
+    <None Include="NetworkInformationSection.cs" />
+    <None Include="ProgramAssociationSection.cs" />
+    <None Include="ProgramMapSection.cs" />
+    <None Include="CaProgramMapSection.cs" />
+    <Compile Include="ServiceDescriptionSection.cs" />
+    <Compile Include="CableDeliverySystemDescriptor.cs" />
+    <Compile Include="ContentDescriptor.cs" />
+    <Compile Include="ComponentDescriptor.cs" />
+    <Compile Include="CaIdentifierDescriptor.cs" />
+    <Compile Include="ServiceType.cs" />
+    <None Include="CarouselIdentifierDescriptor.cs" />
+    <Compile Include="PrivateDataSpecifierDescriptor.cs" />
+    <Compile Include="PdcDescriptor.cs" />
+    <Compile Include="ParentalRatingDescriptor.cs" />
+    <Compile Include="DataBroadcastDescriptor.cs" />
+    <None Include="BouquetNameDescriptor.cs" />
+    <Compile Include="ApplicationSignallingDescriptor.cs" />
+    <Compile Include="AncillaryDataDescriptor.cs" />
+    <Compile Include="LinkageDescriptor.cs" />
+    <Compile Include="TimeShiftedServiceDescriptor.cs" />
+    <Compile Include="AnnouncementSupportDescriptor.cs" />
+    <Compile Include="DvbString.cs" />
+    <Compile Include="RunningStatus.cs" />
+    <Compile Include="DataBroadcastIdDescriptor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
